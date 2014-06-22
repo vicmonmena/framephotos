@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FramePhotos</string>
+    <string name="action_info">Info</string>
+    <string name="action_info_text">Haz fotos con diferentes marcos y compártelas haciendo click encima de la miniatura! Desarrollado por @vicmonmena</string>
+    <string name="action_set_frame">Marcos</string>
+    
+   <!-- messages -->
+   <string name="msg_photo_not_saved">Foto no guardada! Inténtalo de nuevo</string>
+   <string name="msg_photo_saved">Foto almacenada en</string>
+   <string name="msg_take_photo">Por favor! Toma una foto</string>
+   <string name="msg_share">Comaprtir foto</string>
+   <string name="msg_action_share">Compartiendo foto</string>
+   <string name="msg_error_showing_preview">Error mostrando la vista previa de la cámara!</string>
+   <string name="msg_error_opening_camera">Error abriendo la cámara!</string>
+   <string name="msg_no_camera">No hay cámara!</string>
+</resources>

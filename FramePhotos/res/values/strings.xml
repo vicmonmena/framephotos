@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FramePhotos</string>
+    <string name="action_info">Info</string>
+    <string name="action_info_text">Take photos with different frames and share them clicking on miniatures! Developed by @vicmonmena</string>
+    <string name="action_set_frame">Frames</string>
+    
+   <!-- messages -->
+   <string name="msg_photo_not_saved">Photo not saved! Try again</string>
+   <string name="msg_photo_saved">Photo saved at </string>
+   <string name="msg_take_photo">Please! Take a photo </string>
+   <string name="msg_share">Share photo</string>
+   <string name="msg_action_share">Sharing photo</string>
+   <string name="msg_error_showing_preview">Error showing preview!</string>
+   <string name="msg_error_opening_camera">Error opening camera!</string>
+   <string name="msg_no_camera">There is no camera!</string>
+</resources>
