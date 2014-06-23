@@ -75,7 +75,7 @@ public class MainActivity extends Activity implements PictureCallback {
 
     @Override
     protected void onResume() {
-    	// TODO Auto-generated method stub
+    	Log.d(TAG, "onResume");
     	super.onResume();
     	
     	// Añadimos el marco a la cámara

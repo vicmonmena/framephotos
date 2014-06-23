@@ -52,6 +52,12 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
 	private boolean mPreviewRunning = false;
 	
 	/**
+	 * Objeto para el control y acceso a la vista
+	 */
+	SurfaceHolder holder;
+	
+	
+	/**
 	 * Constructor por defecto
 	 * @param context
 	 * @param attrs
@@ -71,7 +77,7 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
 		surfaceView = new SurfaceView(context);
 		addView(surfaceView);
 		
-		SurfaceHolder holder = surfaceView.getHolder();
+		holder = surfaceView.getHolder();
 		// AÑadimos escuchador de la view
 		holder.addCallback(this);
 		
@@ -96,6 +102,7 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
 			try {
 				// Obtenemos la instancia de la camara
 				camera = Camera.open(activeCameraId);
+				camera.setPreviewDisplay(holder);
 			} catch (Exception e) {
 				Toast.makeText(getContext(), getContext().getString(R.string.msg_error_opening_camera), Toast.LENGTH_LONG).show();
 				Log.d(TAG, e.getMessage());
@@ -224,6 +231,7 @@ public class CameraPreview extends FrameLayout implements SurfaceHolder.Callback
 				camera.release();
 				camera = null;
 				camera = Camera.open(activeCameraId);
+				camera.setPreviewDisplay(holder);
 				camera.startPreview();
 			} catch (Exception e) {
 				Toast.makeText(getContext(), getContext().getString(R.string.msg_error_opening_camera), Toast.LENGTH_LONG).show();

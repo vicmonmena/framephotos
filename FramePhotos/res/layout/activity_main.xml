@@ -51,8 +51,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/miniature"
         android:background="@drawable/ic_set_camera"
-        android:onClick="onClick"
-        android:visibility="invisible"/>
+        android:onClick="onClick"/>
 
     <Button
         android:id="@+id/setFrameBtn"
